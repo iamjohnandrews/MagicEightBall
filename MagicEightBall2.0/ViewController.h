@@ -14,5 +14,6 @@
 
 - (IBAction)shakeMagicEightBallButton:(id)sender;
 
+@property (weak, nonatomic) IBOutlet UIButton *shakeMagicEightBallButtonOutlet;
 
 @end

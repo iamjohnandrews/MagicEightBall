@@ -13,11 +13,17 @@
 @end
 
 @implementation ViewController
+@synthesize shakeMagicEightBallButtonOutlet;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    shakeMagicEightBallButtonOutlet.layer.cornerRadius = 8;
+    shakeMagicEightBallButtonOutlet.layer.borderWidth = 1;
+    shakeMagicEightBallButtonOutlet.layer.borderColor = [UIColor whiteColor].CGColor;
+    shakeMagicEightBallButtonOutlet.clipsToBounds = YES;
     
     NSArray *fortuneCookieResponse = @[@"Conquer your fears or they will conquer you",
                                        @"You only need look to your own reflection for inspiration. Because you are Beautiful!",
