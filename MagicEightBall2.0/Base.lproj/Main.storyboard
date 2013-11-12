@@ -29,13 +29,15 @@
                                 <state key="normal" title="Shake">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="shakeMagicEightBallButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rhb-5L-J0a"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="answerDisplayLabel" destination="cjy-Jm-H4D" id="Frt-kG-BHF"/>
-                        <outlet property="shakeMagicEightBallButton" destination="dax-SX-a5A" id="QuO-3H-3qw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

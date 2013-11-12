@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *answerDisplayLabel;
 
-@property (weak, nonatomic) IBOutlet UIButton *shakeMagicEightBallButton;
+- (IBAction)shakeMagicEightBallButton:(id)sender;
+
 
 @end
