@@ -9,11 +9,14 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+{
+    NSArray *fortuneCookieResponse;
+}
 
 @end
 
 @implementation ViewController
-@synthesize shakeMagicEightBallButtonOutlet;
+@synthesize shakeMagicEightBallButtonOutlet, answerDisplayLabel;
 
 - (void)viewDidLoad
 {
@@ -25,7 +28,7 @@
     shakeMagicEightBallButtonOutlet.layer.borderColor = [UIColor whiteColor].CGColor;
     shakeMagicEightBallButtonOutlet.clipsToBounds = YES;
     
-    NSArray *fortuneCookieResponse = @[@"Conquer your fears or they will conquer you",
+    fortuneCookieResponse = @[@"Conquer your fears or they will conquer you",
                                        @"You only need look to your own reflection for inspiration. Because you are Beautiful!",
                                        @"Rivers need springs",
                                        @"Good news from afar may bring you a welcome visitor",
@@ -51,9 +54,8 @@
 }
 
 
-
 - (IBAction)shakeMagicEightBallButton:(id)sender {
-    
-    
+    int randomSelection = arc4random() % fortuneCookieResponse.count - 1;
+    answerDisplayLabel.text = [fortuneCookieResponse objectAtIndex:randomSelection];
 }
 @end
